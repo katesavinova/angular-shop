@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { CardModel } from '../models/card.model';
 
 @Component({
@@ -8,4 +8,8 @@ import { CardModel } from '../models/card.model';
 })
 export class CardComponent{
   @Input() Card: CardModel;
+  @Output() add: EventEmitter<number> = new EventEmitter<number>();
+  addToCart(): void{
+    this.add.emit(this.Card.id);
+  };
 }

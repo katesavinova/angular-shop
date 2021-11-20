@@ -5,14 +5,18 @@
 .card {
   background: #f3f3f2;
   box-shadow: 0 0 10px rgba(167, 167, 167, 0.5);
-  width: 80%;
+  width: 100%;
   height: auto;
-  margin: 5%;
+  margin:  5% auto;
   padding: 20px;
 }
+.card-img{
+  max-width: 250px;
+  margin:  1% auto;
+}
 .card-img img {
-  width: 100%;
-  min-height: 250px;
+  width: 90%;
+  height: 250px;
 }
 .card-info {
   font-size: 20px;

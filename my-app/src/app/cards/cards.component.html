@@ -1,4 +1,4 @@
+<h1>{{Title}}</h1>
 <div class="cards">
-<app-card [Card]= Cards[0]></app-card>
-<app-card [Card]= Cards[1]></app-card>
+<app-card *ngFor = "let item of Cards" [Card]= "item" (add)="addToCart($event)"></app-card>
 </div>
