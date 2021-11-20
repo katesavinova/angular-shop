@@ -1,0 +1,42 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.card {
+  background: #f3f3f2;
+  box-shadow: 0 0 10px rgba(167, 167, 167, 0.5);
+  width: 80%;
+  height: auto;
+  margin: 5%;
+  padding: 20px;
+}
+.card-img img {
+  width: 100%;
+  min-height: 250px;
+}
+.card-info {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-info-price {
+  margin-top: 20px;
+  font-size: 15px;
+  color: #777777;
+  display: flex;
+  justify-content: space-between;
+}
+.card-info-btn {
+  width: 100%;
+  height: auto;
+  margin: 10% 0;
+  padding: 3%;
+  border-radius: 7px;
+  box-shadow: 0 0 10px rgba(167, 167, 167, 0.5);
+  border-width: 0ch;
+  background-color: #dfb729;
+  color: wheat;
+  font-size: 20px;
+  cursor: pointer;
+}
