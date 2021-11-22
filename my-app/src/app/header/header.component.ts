@@ -7,10 +7,8 @@ import { Component, OnInit,Output,EventEmitter } from '@angular/core';
 })
 export class HeaderComponent{
   @Output() show: EventEmitter<void> = new EventEmitter<void>();
-  value = false;
-  showCart(value:boolean):void{
-    this.value = !value;
-    console.log(value);
+
+  showCart():void{
     this.show.emit();
   }
 }

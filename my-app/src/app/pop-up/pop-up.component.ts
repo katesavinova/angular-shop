@@ -8,9 +8,7 @@ import { CartModel } from '../models/cart.model';
 })
 export class PopUpComponent{
   @Output() close: EventEmitter<void>= new EventEmitter<void>();
-  value = true;
-  popupClose(value:boolean):void{
-    this.value = !value;
+  popupClose():void{
     this.close.emit();
   }
 }

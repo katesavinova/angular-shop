@@ -10,7 +10,6 @@ export class AppComponent {
   value:boolean = false;
   showCart(){
     this.value = true;
-    console.log(this.value);
   }
   closeCart(){
     this.value = false;
